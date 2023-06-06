@@ -20,7 +20,7 @@ async fn main() -> std::io::Result<()> {
             .service(hello)
             .service(fs::Files::new("/", "/root/mtv/data").show_files_listing())
     })
-    .bind(("0.0.0.0", 8123))?
+    .bind(("0.0.0.0", 8456))?
     .run()
     .await
 }
