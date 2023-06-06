@@ -18,7 +18,7 @@ async fn main() -> std::io::Result<()> {
         App::new()
             .wrap(cors)
             .service(hello)
-            .service(fs::Files::new("/", "/home/pipi/mtv_frontend_server/data").show_files_listing())
+            .service(fs::Files::new("/", "/root/mtv/data").show_files_listing())
     })
     .bind(("192.168.0.74", 8123))?
     .run()
