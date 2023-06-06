@@ -1,0 +1,8 @@
+[Unit]
+Description=MTV server service file
+
+[Service]
+ExecStart=/usr/bin/mtv_server_test
+
+[Install]
+WantedBy=multi-user.target
