@@ -21,7 +21,7 @@ else
     cp -pvr dist/* $FES/data/;
 fi
 
-# cd $FES;
+cd $FES;
 # git pull;
 docker build -t $IMG .;
 docker run -d -p 8456:8456 $IMG;
