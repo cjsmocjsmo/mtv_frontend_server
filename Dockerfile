@@ -40,5 +40,5 @@ EXPOSE 8080
 
 STOPSIGNAL SIGINT
 
-CMD ["tail", "-f", "/dev/null"]
-# CMD ["/usr/bin/mtv_frontend_server"]
+# CMD ["tail", "-f", "/dev/null"]
+CMD ["/usr/bin/mtv_frontend_server"]
