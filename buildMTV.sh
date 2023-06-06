@@ -1,7 +1,7 @@
 #!/bin/sh
 
-MTV="/media/pi/HD/MTVSERVER/mtv2.2";
-FES="/media/pi/HD/MTVSERVER/mtv_frontend_server";
+MTV="/media/pi/mtv2.2";
+FES="/media/pi/mtv_frontend_server";
 VERSION="0.0.1";
 IMG="mtv_frontend_server:$VERSION";
 
