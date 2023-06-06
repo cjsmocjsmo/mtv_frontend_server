@@ -20,7 +20,7 @@ async fn main() -> std::io::Result<()> {
             .service(hello)
             .service(fs::Files::new("/", "/home/pipi/mtv_frontend_server/data").show_files_listing())
     })
-    .bind(("0.0.0.0", 8123))?
+    .bind(("192.168.0.74", 8123))?
     .run()
     .await
 }
