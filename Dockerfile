@@ -22,7 +22,7 @@ FROM debian:bookworm-slim
 
 WORKDIR /usr/bin
 
-COPY --from=builder /root/mtv_frontend_server/target/release/mtv_frontend_server .
+COPY --from=builder /root/mtv/target/release/mtv_frontend_server .
 
 RUN chmod -R +rwx /usr/bin/mtv_frontend_server
 
